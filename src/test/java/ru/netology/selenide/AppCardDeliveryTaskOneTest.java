@@ -19,7 +19,7 @@ public class AppCardDeliveryTaskOneTest {
     @Test
     public void shouldBeSuccessfullyCompleted() {
         open("http://localhost:9999");
-        $("[data-test-id='city']input").setValue("Омск");
+        $("[data-test-id='city'] input").setValue("Омск");
         String planningDate = generateDate(4, "dd.mm.yyyy");
         $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT,Keys.HOME), Keys.DELETE);
         $("[data-test-id='date'] input").setValue(planningDate);
